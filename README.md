@@ -1,2 +1,2 @@
 #  Projeto-arduino: Sistema de Alarme com Sensor de Movimento #
-*Trabalho proposto pelo Professor Epalmilondas Lage*
+*Trabalho proposto pelo Professor Epaminondas Lage*
