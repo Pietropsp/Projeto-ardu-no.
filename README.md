@@ -2,7 +2,7 @@
 <h2>Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG)</h2>
 
 <p>
-    Este trabalho, dado pela iniciativa do docente, busca desenvolver a autonomia dos alunos na realização de projetos. 
+    Este trabalho, um projeto de iniciativa do docente(Epaminondas Lage, Professor do CEFET), busca desenvolver a autonomia dos alunos na realização de projetos. 
 </p>
 <h3>Tema do Projeto: Funcionamento do Sensor de Movimento.</h3>
 <h4>Primeiramente: trataremos da seleção das peças.</h4>
