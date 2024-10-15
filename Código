@@ -1,0 +1,29 @@
+// Definições de pinos
+const int pirPin = 2;    // Pino do sensor PIR
+const int buzzerPin = 8; // Pino da buzina
+const int ledPin1 = 9;   // Pino do LED 1
+const int ledPin2 = 10;  // Pino do LED 2
+
+void setup() {
+  pinMode(pirPin, INPUT);     // Configura o pino do sensor PIR como entrada
+  pinMode(buzzerPin, OUTPUT); // Configura o pino da buzina como saída
+  pinMode(ledPin1, OUTPUT);   // Configura o pino do LED 1 como saída
+  pinMode(ledPin2, OUTPUT);   // Configura o pino do LED 2 como saída
+  Serial.begin(9600);         // Inicializa a comunicação serial
+}
+
+void loop() {
+  int pirState = digitalRead(pirPin); // Lê o estado do sensor PIR
+
+  if (pirState == HIGH) { // Movimento detectado
+    digitalWrite(buzzerPin, HIGH); // Ativa a buzina
+    digitalWrite(ledPin1, HIGH);    // Acende o LED 1
+    digitalWrite(ledPin2, HIGH);    // Acende o LED 2
+    Serial.println("Movimento detectado!");
+    delay(5000); // Mantém o alarme acionado por 5 segundos
+  } else {
+    digitalWrite(buzzerPin, LOW);  // Desativa a buzina
+    digitalWrite(ledPin1, LOW);     // Apaga o LED 1
+    digitalWrite(ledPin2, LOW);     // Apaga o LED 2
+  }
+}
